@@ -168,9 +168,9 @@ const App: React.FC = () => {
               <div key={tag.id} className="tag">
                 <TagComponent tag={tag} />
                 <div className="tag-count">({tag.count})</div>
-                <div>
-                  <button className="edit-btn" onClick={() => handleEditTag(tag)}>E</button>
-                  <button className="delete-btn" onClick={() => handleDeleteTag(tag.id)}>D</button>
+                <div className='buttons-tag'>
+                  <button className="edit-btn" onClick={() => handleEditTag(tag)}>Edit</button>
+                  <button className="delete-btn" onClick={() => handleDeleteTag(tag.id)}>Delete</button>
                 </div>
               </div>
           ))}

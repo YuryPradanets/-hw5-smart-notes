@@ -98,12 +98,6 @@ input[type="text"]::placeholder {
   margin-left: 10px;
 }
 
-button.edit-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
 .tag-count {
   font-size: 0.8em;
   color: gray;
@@ -124,12 +118,18 @@ button.edit-btn {
 }
 
 .delete-btn {
-  margin-left: 5px;
+  margin-right: 5px;
   cursor: pointer;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   padding: 5px;
-  position: absolute;
-  top: 10px;
-  right: 35px;
+  }
+.buttons-tag{
+    display: flex;  
+    justify-content: center;  
+}  
+
+.buttons-tag button {  
+    flex: 1;
+    border-radius: 5px;
 }
