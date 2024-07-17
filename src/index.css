@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.modal-content {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.modal-content input[type="text"],
+.modal-content select,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  height: 100px;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.notes-container, .tags-container {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.notes-container h2, .tags-container h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note, .tag {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.note button, .tag button {
+  margin-right: 5px;
+}
+
+.note-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.note-date {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  font-style: italic;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+button.edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.tag-count {
+  font-size: 0.8em;
+  color: gray;
+  margin-left: 5px;
+}
+
+.edit-btn {
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 35px;
 }
