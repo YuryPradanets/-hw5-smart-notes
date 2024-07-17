@@ -3,8 +3,8 @@ export interface Note {
     tagId: string | null;
     title: string | null;
     text: string;
-    created: string;  // Changed to string for serialization
-    updated: string;  // Changed to string for serialization
+    created: string;  
+    updated: string;  
 }
 
 export interface Tag {
